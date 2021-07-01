@@ -1,0 +1,22 @@
+.card-container {
+    height: 400px;
+    width: 245px;
+    border: 2px solid black;
+}
+
+.product-img {
+    width: 225px;
+    height: 208px;
+    margin: 9px 9px 0px 9px;
+}
+
+.price-container {
+    background-color: #FF8F63;
+    height: 30px;
+    width: 62px;
+ 
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
