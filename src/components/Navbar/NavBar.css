@@ -1,0 +1,57 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80px;
+    background-color: #6C63FF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.search-container {
+    position: relative;
+    width: auto;
+    width: 45%;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    
+}
+
+.input-search {
+    position: relative;
+    padding-left: 20px;
+    width: 100%;
+    min-width: 150px;
+    height: 40px;
+}
+
+.input-search::placeholder {
+    color: #A4A4A4;
+    font-size: 18px;
+    padding-left: 50px;
+}
+
+.input-search:focus::placeholder {
+    color: transparent;
+  }
+
+.login-container {
+    width: 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    color: white;
+    font: 20px;
+}
+
