@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from './components/Navbar/NavBar';
+import Contenedor from './components/Contenedor/Contenedor'
 import Card from './components/Card/Card'
 
 function App() {
@@ -7,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="main-container">
-        <Card />
-      </div>  
+      <Contenedor>
+        <Card></Card>
+      </Contenedor>
     </div>
   );
 }

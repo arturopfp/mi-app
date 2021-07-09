@@ -5,18 +5,12 @@ import search from '../../assets/img/search.svg'
 
 
 function NavBar() {
-    let searchIcon = document.getElementById('searchIcon');
-
-    const hideIcon = () => {
-        console.log(searchIcon);
-    }
-
     
 
     return(
         <nav className="NavBar">
             <p className="logo">MyStore</p>
-            <div className="search-container" onClick={hideIcon}>
+            <div className="search-container">
                 <input className="input-search" placeholder="Search ..."></input>
                 <img id="searchIcon" className="search-icon" src={search} alt="" />
             </div>    
