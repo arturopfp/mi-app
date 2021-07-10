@@ -5,22 +5,21 @@ import shoppingCar from '../../assets/img/shopping_cart.svg'
 
 
 
-function Card() {
+function Card(props) {
 
-    let img = 'https://i.pinimg.com/originals/eb/83/be/eb83be580847bcdc4c8f403c8085d3c8.jpg';
-    
+    let {imagen, price, title, brand, description} = props;   
     
     return(
         <div className="card-container">
-            <img className="product-img" src={img} alt='Product'></img>
+            <img className="product-img" src={imagen} alt='Product'></img>
             <div className="price-container">
-                <p className="price">$962</p>
+                <p className="price">{price}</p>
             </div>
             <div className="title-card">
-                <h6>Awesome Granite Bacon</h6>
-                <p className="brand">Osinski - Prosacco</p>
+                <h6>{title}</h6>
+                <p className="brand">{brand}</p>
             </div>
-            <p className="card-description">The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients.</p>
+            <p className="card-description">{description}</p>
             <div className="add-to-card">
                 <img src={add} alt=""></img>
                 <img src={shoppingCar} alt=""></img>
